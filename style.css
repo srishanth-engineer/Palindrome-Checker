@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#heading {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#game {
+    width: min(100vw, 450px);
+    min-height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 6px 6px #002ead;
+}
+
+#text-input {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #5a01a7;
+    background-color: field;
+
+}
+
+#check-btn {
+    width: 90px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #5a01a7;
+    color: #fff;
+    cursor: pointer;
+}
+
+#message {
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    background-color: #00471b;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#result {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+    background-color: white;
+    color: balck;
+}
+
+
+
+@media (max-width: 600px) {
+    #heading {
+        font-size: 2rem;
+    }
+
+    #text-input {
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    #check-btn {
+        width: 70px;
+        padding: 8px;
+    }
+
+    #message {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #heading {
+        font-size: 2.2rem;
+    }
+
+    #text-input {
+        width: 220px;
+        font-size: 1.1rem;
+    }
+
+    #check-btn {
+        width: 80px;
+        padding: 9px;
+    }
+
+    #message {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    #result {
+        font-size: 1.3rem;
+    }
+}
+
+/* Laptops and desktops */
+@media (min-width: 1025px) {
+    #heading {
+        font-size: 2.5rem;
+    }
+
+    #text-input {
+        width: 250px;
+        font-size: 1.2rem;
+    }
+
+    #check-btn {
+        width: 90px;
+        padding: 10px;
+    }
+
+    #message {
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    #result {
+        font-size: 1.4rem;
+    }
+}
